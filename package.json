@@ -1,0 +1,82 @@
+{
+  "name": "auto-attack",
+  "version": "1.3.0",
+  "description": "Автоматический кликер перед собой в одну точку с выбором типа клика и интеллектуальным выбором оружия.",
+  "main": "index.js",
+  "author": "artermploxoy:",
+  "botpanel": {
+    "categories": [
+      "Автоматизация",
+      "Команды"
+    ],
+    "icon": "Swords",
+    "settings": {
+      "actionsPreset": {
+        "type": "select",
+        "label": "Режим авто-кликера",
+        "description": "Выберите готовый пресет частоты кликов или настройте вручную.",
+        "options": [
+          { 
+            "value": "fast", 
+            "label": "Быстрый (400 мс)" 
+          },
+          { 
+            "value": "slow", 
+            "label": "Медленный (1000 мс)" 
+          },
+          { 
+            "value": "custom", 
+            "label": "Вручную (настроить задержку и оружие)" 
+          }
+        ],
+        "default": "fast"
+      },
+      "enableClickType": {
+        "type": "select",
+        "label": "Тип клика (Кнопка мыши)",
+        "description": "Имитировать нажатие ЛКМ (атака/взмах) или ПКМ (использование предмета/взаимодействие). Доступно во ручном режиме.",
+        "options": [
+          { "value": "lmb", "label": "ЛКМ (Левая кнопка мыши)" },
+          { "value": "rmb", "label": "ПКМ (Правая кнопка мыши)" }
+        ],
+        "default": "lmb"
+      },
+      "enableBestWeaponSelect": {
+        "type": "boolean",
+        "label": "Выбирать лучшее оружие",
+        "description": "Автоматически переключаться на лучшее оружие в инвентаре или горячей панели. Доступно во ручном режиме.",
+        "default": false
+      },
+      "enableWeaponCriteria": {
+        "type": "select",
+        "label": "Характеристика для выбора оружия",
+        "description": "Критерий оценки оружия в инвентаре.",
+        "options": [
+          { "value": "damage", "label": "Урон (базовый урон + острота)" },
+          { "value": "durability", "label": "Прочность (наибольшая оставшаяся)" },
+          { "value": "enchantments", "label": "Чары (только по чарам)" },
+          { "value": "custom", "label": "Кастомный слот панели" }
+        ],
+        "default": "damage"
+      },
+      "enableCustomSlot": {
+        "type": "number",
+        "label": "Кастомный слот панели (0-8)",
+        "description": "Индекс слота быстрого доступа (0 — первый слот, 8 — девятый слот).",
+        "default": 0
+      },
+      "enableAttackCooldown": {
+        "type": "number",
+        "label": "Задержка между атаками (мс)",
+        "description": "Интервал в миллисекундах перед следующим ударом.",
+        "default": 600
+      },
+      "enableAttackRange": {
+        "type": "number",
+        "label": "Дистанция атаки (блоки)",
+        "description": "Максимальное расстояние для проверки цели перед собой.",
+        "default": 3.5
+      }
+    }
+  }
+}
