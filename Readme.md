@@ -54,4 +54,4 @@
 ---
 
 ## Проблемы? Бот не бьет по цели, не переключает оружие или не слушается команд?
-Пиши в личку в ВК: [artemploxoy](https://vk.com/artemploxoy)
+**Пиши в личку в ВК: [`artemploxoy`](https://vk.com/artemploxoy)**
