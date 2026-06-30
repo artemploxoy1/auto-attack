@@ -3,7 +3,7 @@
   "version": "1.3.0",
   "description": "Автоматический кликер перед собой в одну точку с выбором типа клика и интеллектуальным выбором оружия.",
   "main": "index.js",
-  "author": "artermploxoy:",
+  "author": "artemploxoy:",
   "botpanel": {
     "categories": [
       "Автоматизация",
